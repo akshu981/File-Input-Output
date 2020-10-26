@@ -1,1 +1,4 @@
 # File-Input-Output
+I developed a Java application that consolidated all the Stock data files into one spreadsheet based on the data range provided by the user. The user chooses the folder containing the CSV data of stocks and the directory of the output consolidated files. The interface also shows the progress through a progress bar representing the percentage completion. After consolidating the files, the program saves and opens the consolidated files in excel format.
+
+Initially, the application converts the user input date into long format, reads the files and populates the array of stocks with qualified data. Then, it reads one line at a time and sorts the data by splitting using coma delimiter. The number of processed files and rejected files is counted and the output file is created if the number of processed files is greater than zero. The code loops through each stock and outputs its data onto the next row of the file. 
